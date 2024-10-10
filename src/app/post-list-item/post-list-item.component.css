@@ -1,0 +1,10 @@
+.post-item {
+  display: flex;
+  align-items: center;
+}
+.post-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 15px;
+}

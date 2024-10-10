@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
-import {NgStyle} from "@angular/common";
+import {NgIf, NgStyle} from "@angular/common";
 
 @Component({
   selector: 'app-post-list-item',
   standalone: true,
   imports: [
-    NgStyle
+    NgStyle,
+    NgIf
   ],
   templateUrl: './post-list-item.component.html',
   styleUrl: './post-list-item.component.css'

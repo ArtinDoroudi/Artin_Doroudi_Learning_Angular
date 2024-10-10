@@ -3,5 +3,5 @@ export interface Post {
   title: string;
   content: string;
   author: string;
-  isPinned?: boolean; // Optional
+  imageUrl?: string; // optional property for image
 }

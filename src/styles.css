@@ -6,4 +6,10 @@ body{
     background-image: url("https://assets1.ignimgs.com/2019/08/27/cp77-kv-en-1566871767337.jpg");
     background-size: cover;
   backdrop-filter: brightness(0.3);
+  color: white;
+}
+
+a{
+    text-decoration: none;
+    color: skyblue;
 }

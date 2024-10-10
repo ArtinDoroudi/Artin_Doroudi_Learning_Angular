@@ -1,3 +1,11 @@
-<h1>Cyberpunk 2077 Forum</h1>
-<app-post-list-item [post]="specialPost"></app-post-list-item>
-<app-post-list></app-post-list>
+<nav>
+  <ul>
+    <li><a routerLink="/posts" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/modify-post" routerLinkActive="active">Modify Post</a></li>
+  </ul>
+</nav>
+
+<div>
+  <h1>Cyberpunk 2077 Forum</h1>
+  <router-outlet></router-outlet>  <!-- Required to load routed components -->
+</div>

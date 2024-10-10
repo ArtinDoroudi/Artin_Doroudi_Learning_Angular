@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';  // You need to import Component
-import { Post } from './shared/models/post';  // Import the Post interface
+import { Component } from '@angular/core';
+import { Post } from './shared/models/post';
 import {JsonPipe, NgForOf} from "@angular/common";
-import { RouterOutlet } from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {PostListComponent} from "./post-list/post-list.component";
 import {PostListItemComponent} from "./post-list-item/post-list-item.component";
 import {PostService} from "./post.service";
@@ -9,7 +9,7 @@ import {PostService} from "./post.service";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgForOf, JsonPipe, PostListComponent, PostListItemComponent],
+  imports: [RouterOutlet, NgForOf, JsonPipe, PostListComponent, PostListItemComponent, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
