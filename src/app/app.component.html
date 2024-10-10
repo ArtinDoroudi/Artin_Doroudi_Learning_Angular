@@ -1,3 +1,8 @@
-<h1>Welcome to {{ title }}!</h1>
-<p>Name: {{ name }}</p>
-<p>Age: {{ age }}</p>
+<div class="container">
+  <h2>Forum Posts</h2>
+  <div *ngFor="let post of posts" class="post-box">
+    <h3>{{ post.title }}</h3>
+    <h4> Written By: {{ post.author }}</h4>
+    <p>{{ post.content }}</p>
+  </div>
+</div>
