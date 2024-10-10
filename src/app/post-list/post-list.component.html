@@ -1,3 +1,6 @@
-<div *ngFor="let post of posts; let isEven = even">
-  <app-post-list-item [post]="post" [isEven]="isEven"></app-post-list-item>
+<div *ngIf="selectedPost">
+  <app-post-list-item [post]="selectedPost"></app-post-list-item>
+</div>
+<div *ngFor="let post of posts" (click)="selectPost(post)">
+  <app-post-list-item [post]="post"></app-post-list-item>
 </div>
