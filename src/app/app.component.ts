@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';  // You need to import Component
-import { Post } from './shared/models/post';  // Import the Post interface
+import { Component } from '@angular/core';
+import { Post } from './shared/models/post';
 import {JsonPipe, NgForOf} from "@angular/common";
 import { RouterOutlet } from '@angular/router';
 import {PostListComponent} from "./post-list/post-list.component";
