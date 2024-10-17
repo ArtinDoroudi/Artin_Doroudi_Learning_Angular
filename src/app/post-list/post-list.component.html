@@ -1,6 +1,6 @@
 <div *ngIf="selectedPost">
   <app-post-list-item [post]="selectedPost"></app-post-list-item>
 </div>
-<div *ngFor="let post of posts" (click)="selectPost(post)">
+<div *ngFor="let post of posts" (click)="goToPost(post.id)">
   <app-post-list-item [post]="post"></app-post-list-item>
 </div>
